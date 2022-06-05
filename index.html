@@ -4,11 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome and google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="assets/css/style.css">
     <title>bear, ninja, hunter</title>
 </head>
 <body>
-    
+    <!--headers-->
+    <h1 class="heading"> Bear . Ninja . Hunter</h1>
+    <h2 class="subheading">Choose wisely!</h2>
+
+    <!--game area-->
+    <div class="game-area">
+        <div class="selection-area">
+            <img id="bear" src="assets/images/bear_win.png" alt="Cartoon of bear">
+            <img id="ninja" src="assets/images/ninja_win.png" alt="Cartoon of ninja">
+            <img id="hunter" src="assets/images/hunter_win.png" alt="Cartoon of hunter">
+        </div>
+        <div>
+            <p class="game-outcome"></p>
+        </div>
+    </div>
+
+    <!--score area-->
+    <div class="score-area">
+        <p class="scores">Lived <span id="score">0</span></p>
+        <p class="scores">Died <span id="died">0</span></p>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            <p>RULES</p>
+            <p>bear eats ninja : ninja kills hunter : hunter shoots bear</p>
+        </div>
+    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>
