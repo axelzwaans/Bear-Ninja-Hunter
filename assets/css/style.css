@@ -29,19 +29,18 @@ body {
 
     display: flex;
     justify-content: center;
-    height: 250px;
 
 }
 
-.selection-area > img {
+.selection-area  img {
 
     height: 200px;
     width: 200px;
-    padding: 40px;
+    margin: 40px;
 
 }
 
-.game-outcome {
+.result {
     
     margin: 60px auto;
 
@@ -53,10 +52,16 @@ footer {
 
     height: 150px;
     background-color: #F76C6C;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
     width: 100%;
+    left: 0;
+    bottom: 0;
 
 }
 
+button {
+
+    all: unset;
+    cursor: pointer;
+
+  }

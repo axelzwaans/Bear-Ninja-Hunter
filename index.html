@@ -20,12 +20,22 @@
     <!--game area-->
     <div class="game-area">
         <div class="selection-area">
-            <img id="bear" src="assets/images/bear_win.png" alt="Cartoon of bear">
-            <img id="ninja" src="assets/images/ninja_win.png" alt="Cartoon of ninja">
-            <img id="hunter" src="assets/images/hunter_win.png" alt="Cartoon of hunter">
+            <button onclick="submit()" id="bear">
+                <img src="assets/images/bear_win.png" alt="Cartoon of bear">
+            </button>
+            <button onclick="submit()" id="ninja">
+                <img src="assets/images/ninja_win.png" alt="Cartoon of ninja">
+            </button>
+            <button onclick="submit()" id="hunter">
+                <img src="assets/images/hunter_win.png" alt="Cartoon of hunter">
+            </button>
         </div>
         <div>
-            <p class="game-outcome">You win!</p>
+            <p>You chose: <span id="player-choice"></span></p>
+            <p>Computer chose: <span id="computer-choice"></span></p>
+        </div>
+        <div>
+            <p>You win!<span id="result"></span></p> 
         </div>
     </div>
 
@@ -43,6 +53,7 @@
         </div>
     </footer>
 
+    <!--javascript-->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
