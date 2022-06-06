@@ -36,14 +36,19 @@ body {
 
     height: 200px;
     width: 200px;
-    margin: 40px;
+    margin: 50px;
 
 }
 
-.result {
-    
+.choices {
+
     margin: 60px auto;
 
+}
+
+.score-area {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* footer */
@@ -64,4 +69,9 @@ button {
     all: unset;
     cursor: pointer;
 
+  }
+
+  #scores {
+      display: flex;
+      justify-content: center;
   }

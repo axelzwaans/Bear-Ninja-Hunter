@@ -20,30 +20,32 @@
     <!--game area-->
     <div class="game-area">
         <div class="selection-area">
-            <button onclick="submit()" id="bear">
-                <img src="assets/images/bear_win.png" alt="Cartoon of bear">
+            <button>
+                <img id="bear" src="assets/images/bear_win.png" alt="Cartoon of bear">
             </button>
-            <button onclick="submit()" id="ninja">
-                <img src="assets/images/ninja_win.png" alt="Cartoon of ninja">
+            <button>
+                <img id="ninja" src="assets/images/ninja_win.png" alt="Cartoon of ninja">
             </button>
-            <button onclick="submit()" id="hunter">
-                <img src="assets/images/hunter_win.png" alt="Cartoon of hunter">
+            <button>
+                <img id="hunter" src="assets/images/hunter_win.png" alt="Cartoon of hunter">
             </button>
         </div>
-        <div>
+        <div class="choices">
             <p>You chose: <span id="player-choice"></span></p>
             <p>Computer chose: <span id="computer-choice"></span></p>
         </div>
         <div>
-            <p>You win!<span id="result"></span></p> 
+            <p><span id="result"></span></p> 
         </div>
     </div>
 
     <!--score area-->
     <div class="score-area">
-        <p class="scores">Lived: <span id="score">0</span></p>
-        <p class="scores">Died: <span id="died">0</span></p>
+        <p>Lived: <span id="score">0</span></p>
+        <p>Died: <span id="died">0</span></p>
     </div>
+
+    
 
     <!--footer-->
     <footer>
