@@ -61,7 +61,7 @@ function getResult() {
 
 function incrementScore() {
     
-    let oldscore = parseInt(document.getElementById('score').innerText)
+    let oldScore = parseInt(document.getElementById('score').innerText)
     document.getElementById('score').innerText = ++oldScore
 
 }

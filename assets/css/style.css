@@ -14,6 +14,7 @@ body {
 
     margin: 60px auto;
     font-size: 40px;
+    min-height: 10vh;
 
 }
 
@@ -25,6 +26,8 @@ body {
 
 /* Game area */
 
+
+
 .selection-area {
 
     display: flex;
@@ -32,35 +35,23 @@ body {
 
 }
 
-.selection-area  img {
+.selection-area img {
 
     height: 200px;
     width: 200px;
+
+}
+
+button img {
+
+    transition: transform .2s ease;
     margin: 50px;
 
 }
 
-.choices {
+button:hover img {
 
-    margin: 60px auto;
-
-}
-
-.score-area {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-/* footer */
-
-footer {
-
-    height: 150px;
-    background-color: #F76C6C;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
+    transform: scale(1.2);
 
 }
 
@@ -69,9 +60,35 @@ button {
     all: unset;
     cursor: pointer;
 
+
   }
 
-  #scores {
-      display: flex;
-      justify-content: center;
-  }
+.choices {
+
+    margin: 60px auto;
+
+}
+
+.score-area {
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#scores {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/* footer */
+
+footer {
+
+    height: 150px;
+    background-color: #F76C6C;
+    min-height: 5vh;
+
+}
