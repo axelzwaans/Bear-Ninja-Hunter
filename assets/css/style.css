@@ -1,5 +1,12 @@
 /* Global style */
 
+html {
+
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+
 body {
 
     background-color: #A8D0E6;
@@ -12,9 +19,8 @@ body {
 
 .heading {
 
-    margin: 60px auto;
+    margin: 40px auto;
     font-size: 40px;
-    min-height: 10vh;
 
 }
 
@@ -26,12 +32,10 @@ body {
 
 /* Game area */
 
+.game-area {
 
-
-.selection-area {
-
-    display: flex;
-    justify-content: center;
+    width: 75%;
+    margin: auto;
 
 }
 
@@ -60,12 +64,17 @@ button {
     all: unset;
     cursor: pointer;
 
-
   }
 
 .choices {
 
     margin: 60px auto;
+
+}
+
+.outcome {
+
+    margin: auto;
 
 }
 
@@ -76,19 +85,16 @@ button {
 
 }
 
-#scores {
-
-    display: flex;
-    justify-content: center;
-
-}
 
 /* footer */
 
 footer {
 
-    height: 150px;
+    min-height: 100px;
     background-color: #F76C6C;
-    min-height: 5vh;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
 
 }

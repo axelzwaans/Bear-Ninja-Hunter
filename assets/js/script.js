@@ -31,30 +31,52 @@ function generateComputerChoice() {
 function getResult() {
     if (computerChoice === playerChoice) {
         result = "It's a draw!"
+        document.getElementById('bear').src = 'assets/images/bear_lose.png'
+        document.getElementById('ninja').src = 'assets/images/ninja_lose.png'
+        document.getElementById('hunter').src = 'assets/images/hunter_lose.png'
     }
     if (computerChoice === 'bear' && playerChoice === 'ninja') {
-        result = "you died!"
+        result = "you lose!"
         incrementLose()
+        document.getElementById('ninja').src = 'assets/images/ninja_lose.png'
+        document.getElementById('bear').src = 'assets/images/bear_win.png'
+        document.getElementById('hunter').src = 'assets/images/hunter_win.png'
+
     }
     if (computerChoice === 'bear' && playerChoice === 'hunter') {
-        result = "You lived!"
+        result = "You win!"
         incrementScore()
+        document.getElementById('hunter').src = 'assets/images/hunter_win.png'
+        document.getElementById('bear').src = 'assets/images/bear_lose.png'
+        document.getElementById('ninja').src = 'assets/images/ninja_win.png'
     }
     if (computerChoice === 'ninja' && playerChoice === 'hunter') {
-        result = "You died!"
+        result = "You lose!"
         incrementLose()
+        document.getElementById('hunter').src = 'assets/images/hunter_lose.png'
+        document.getElementById('ninja').src = 'assets/images/ninja_win.png'
+        document.getElementById('bear').src = 'assets/images/bear_win.png'
     }
     if (computerChoice === 'ninja' && playerChoice === 'bear') {
-        result = "You lived!"
+        result = "You win!"
         incrementScore()
+        document.getElementById('bear').src = 'assets/images/bear_win.png'
+        document.getElementById('ninja').src = 'assets/images/ninja_lose.png'
+        document.getElementById('hunter').src = 'assets/images/hunter_win.png'
     }
     if (computerChoice === 'hunter' && playerChoice === 'bear') {
-        result = "You died!"
+        result = "You lose!"
         incrementLose()
+        document.getElementById('bear').src = 'assets/images/bear_lose.png'
+        document.getElementById('ninja').src = 'assets/images/ninja_win.png'
+        document.getElementById('hunter').src = 'assets/images/hunter_win.png'
     }
     if (computerChoice === 'hunter' && playerChoice === 'ninja') {
-        result = "You lived!"
+        result = "You win!"
         incrementScore()
+        document.getElementById('ninja').src = 'assets/images/ninja_win.png'
+        document.getElementById('hunter').src = 'assets/images/hunter_lose.png'
+        document.getElementById('bear').src = 'assets/images/bear_win.png'
     }
     resultDisplay.innerHTML = result
 }
