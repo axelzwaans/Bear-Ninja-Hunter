@@ -1,75 +1,51 @@
 /* Global style */
 
-html {
-
-    margin: 0px;
-    height: 100%;
-    width: 100%;
- }
-
 body {
-
     background-color: #A8D0E6;
     font-family: "Press Start 2P", sans-serif;
     text-align: center;
-
+    margin: 0;
 }
 
 /* Heading */
 
 .heading {
-
     margin: 40px auto;
     font-size: 40px;
-
 }
 
 .subheading {
-
     margin-bottom: 60px;
-
 }
 
 /* Game area */
 
 .game-area {
-
     width: 75%;
     margin: auto;
-
 }
 
 .selection-area img {
-
     height: 200px;
     width: 200px;
-
 }
 
 button img {
-
     transition: transform .2s ease;
     margin: 50px;
-
 }
 
 button:hover img {
-
     transform: scale(1.2);
-
 }
 
 button {
-
     all: unset;
     cursor: pointer;
-
   }
 
 .choices {
-
     margin: 60px auto;
-
 }
 
 .outcome {
@@ -78,23 +54,28 @@ button {
 
 }
 
-.score-area {
+#result {
+    color: #F8E9A1;
+    font-size: 40px;
+}
 
+.score-area {
     display: flex;
     justify-content: space-evenly;
-
+    margin: 60px auto;
 }
 
 
 /* footer */
 
 footer {
-
-    min-height: 100px;
+    height: 100px;
     background-color: #F76C6C;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+footer div {
+    flex-shrink: 0;
 }
