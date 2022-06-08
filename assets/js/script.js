@@ -2,9 +2,9 @@ const computerChoiceDisplay = document.getElementById('computer-choice')
 const playerChoiceDisplay = document.getElementById('player-choice')
 const resultDisplay = document.getElementById('result')
 const possibleChoices = document.querySelectorAll('button')
-var bear = new Audio("assets/audio/bear.mp3")
-var ninja = new Audio("assets/audio/ninja.mp3")
-var hunter = new Audio("assets/audio/hunter.mp3")
+let bear = new Audio("assets/audio/bear.mp3")
+let ninja = new Audio("assets/audio/ninja.mp3")
+let hunter = new Audio("assets/audio/hunter.mp3")
 let playerChoice
 let computerChoice
 let result
@@ -39,6 +39,7 @@ function getResult() {
         document.getElementById('bear').src = 'assets/images/bear_win.png'
         document.getElementById('ninja').src = 'assets/images/ninja_win.png'
         document.getElementById('hunter').src = 'assets/images/hunter_win.png'
+        $(getElementById('ready').replaceWith(getResult))
     }
     if (computerChoice === 'bear' && playerChoice === 'ninja') {
         result = "You lose!"
@@ -46,7 +47,7 @@ function getResult() {
         document.getElementById('ninja').src = 'assets/images/ninja_lose.png'
         document.getElementById('bear').src = 'assets/images/bear_win.png'
         document.getElementById('hunter').src = 'assets/images/hunter_win.png'
-
+        $(getElementById('ready').replaceWith(getResult))
     }
     if (computerChoice === 'bear' && playerChoice === 'hunter') {
         result = "You win!"
@@ -55,6 +56,7 @@ function getResult() {
         document.getElementById('bear').src = 'assets/images/bear_lose.png'
         document.getElementById('ninja').src = 'assets/images/ninja_win.png'
         hunter.play()
+        $(getElementById('ready').replaceWith(getResult))
     }
     if (computerChoice === 'ninja' && playerChoice === 'hunter') {
         result = "You lose!"
@@ -62,6 +64,7 @@ function getResult() {
         document.getElementById('hunter').src = 'assets/images/hunter_lose.png'
         document.getElementById('ninja').src = 'assets/images/ninja_win.png'
         document.getElementById('bear').src = 'assets/images/bear_win.png'
+        $(getElementById('ready').replaceWith(getResult))
     }
     if (computerChoice === 'ninja' && playerChoice === 'bear') {
         result = "You win!"
@@ -70,6 +73,7 @@ function getResult() {
         document.getElementById('ninja').src = 'assets/images/ninja_lose.png'
         document.getElementById('hunter').src = 'assets/images/hunter_win.png'
         bear.play()
+        $(getElementById('ready').replaceWith(getResult))
     }
     if (computerChoice === 'hunter' && playerChoice === 'bear') {
         result = "You lose!"
@@ -77,6 +81,7 @@ function getResult() {
         document.getElementById('bear').src = 'assets/images/bear_lose.png'
         document.getElementById('ninja').src = 'assets/images/ninja_win.png'
         document.getElementById('hunter').src = 'assets/images/hunter_win.png'
+        $(getElementById('ready').replaceWith(getResult))
     }
     if (computerChoice === 'hunter' && playerChoice === 'ninja') {
         result = "You win!"
@@ -85,19 +90,17 @@ function getResult() {
         document.getElementById('hunter').src = 'assets/images/hunter_lose.png'
         document.getElementById('bear').src = 'assets/images/bear_win.png'
         ninja.play()
+        $(getElementById('ready').replaceWith(getResult))
     }
     resultDisplay.innerHTML = result
 }
 
-function incrementScore() {
-    
+function incrementScore() {  
     let oldScore = parseInt(document.getElementById('score').innerText)
     document.getElementById('score').innerText = ++oldScore
-
 }
 
 function incrementLose() {
-
     let oldScore = parseInt(document.getElementById('died').innerText)
     document.getElementById('died').innerText = ++oldScore
 }
