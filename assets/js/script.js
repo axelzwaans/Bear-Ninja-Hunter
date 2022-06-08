@@ -15,6 +15,16 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     playerChoiceDisplay.innerHTML = playerChoice
     generateComputerChoice()
     getResult()
+    $(getElementById('ready').replaceWith(getResult()))
+    $(document).ready(function(){
+
+        $("#btn").click(function() {
+        
+        $("#element1").replaceWith("<p> Element Replaced :) </p>");
+        
+        });
+        
+        });
 }))
 
 
@@ -39,7 +49,6 @@ function getResult() {
         document.getElementById('bear').src = 'assets/images/bear_win.png'
         document.getElementById('ninja').src = 'assets/images/ninja_win.png'
         document.getElementById('hunter').src = 'assets/images/hunter_win.png'
-        $(getElementById('ready').replaceWith(getResult))
     }
     if (computerChoice === 'bear' && playerChoice === 'ninja') {
         result = "You lose!"
@@ -47,7 +56,6 @@ function getResult() {
         document.getElementById('ninja').src = 'assets/images/ninja_lose.png'
         document.getElementById('bear').src = 'assets/images/bear_win.png'
         document.getElementById('hunter').src = 'assets/images/hunter_win.png'
-        $(getElementById('ready').replaceWith(getResult))
     }
     if (computerChoice === 'bear' && playerChoice === 'hunter') {
         result = "You win!"
@@ -56,7 +64,6 @@ function getResult() {
         document.getElementById('bear').src = 'assets/images/bear_lose.png'
         document.getElementById('ninja').src = 'assets/images/ninja_win.png'
         hunter.play()
-        $(getElementById('ready').replaceWith(getResult))
     }
     if (computerChoice === 'ninja' && playerChoice === 'hunter') {
         result = "You lose!"
@@ -64,7 +71,7 @@ function getResult() {
         document.getElementById('hunter').src = 'assets/images/hunter_lose.png'
         document.getElementById('ninja').src = 'assets/images/ninja_win.png'
         document.getElementById('bear').src = 'assets/images/bear_win.png'
-        $(getElementById('ready').replaceWith(getResult))
+        $(getElementById('ready').replaceWith(getResult()))
     }
     if (computerChoice === 'ninja' && playerChoice === 'bear') {
         result = "You win!"
@@ -73,7 +80,6 @@ function getResult() {
         document.getElementById('ninja').src = 'assets/images/ninja_lose.png'
         document.getElementById('hunter').src = 'assets/images/hunter_win.png'
         bear.play()
-        $(getElementById('ready').replaceWith(getResult))
     }
     if (computerChoice === 'hunter' && playerChoice === 'bear') {
         result = "You lose!"
@@ -81,7 +87,6 @@ function getResult() {
         document.getElementById('bear').src = 'assets/images/bear_lose.png'
         document.getElementById('ninja').src = 'assets/images/ninja_win.png'
         document.getElementById('hunter').src = 'assets/images/hunter_win.png'
-        $(getElementById('ready').replaceWith(getResult))
     }
     if (computerChoice === 'hunter' && playerChoice === 'ninja') {
         result = "You win!"
@@ -90,7 +95,6 @@ function getResult() {
         document.getElementById('hunter').src = 'assets/images/hunter_lose.png'
         document.getElementById('bear').src = 'assets/images/bear_win.png'
         ninja.play()
-        $(getElementById('ready').replaceWith(getResult))
     }
     resultDisplay.innerHTML = result
 }
