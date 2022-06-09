@@ -58,7 +58,6 @@ function getResult() {
         document.getElementById('ninja').src = 'assets/images/ninja_lose.png';
         document.getElementById('bear').src = 'assets/images/bear_win.png';
         document.getElementById('hunter').src = 'assets/images/hunter_win.png';
-        hide();
     }
 
     if (computerChoice === 'bear' && playerChoice === 'hunter') {
