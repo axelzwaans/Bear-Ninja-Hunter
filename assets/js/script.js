@@ -14,8 +14,6 @@ let computerChoice;
 let result;
 let yourScore = 0;
 let computerScore = 0;
-let playerScoreDisplay = document.getElementById('playerScore')
-let computerScoreDisplay = document.getElementById('computerScore')
 
 /**
  * Notifies the user of sound effects with an alert
@@ -28,7 +26,6 @@ window.onload = function() {
 /**
  * Displays winner/loser or when round is finished
  */
-
 
  function outcome() {
     document.getElementById('ready').innerText = result;   
@@ -123,8 +120,6 @@ function getResult() {
         document.getElementById('bear').src = 'assets/images/bear_win.png';
         ninja.play();
     }
-
-
 }
 
 /**
