@@ -1,3 +1,7 @@
+/**
+ * Declare variables to be accessed in global scope
+ */
+
 const computerChoiceDisplay = document.getElementById('computer-choice');
 const playerChoiceDisplay = document.getElementById('player-choice');
 const resultDisplay = document.getElementById('result');
@@ -13,15 +17,27 @@ let computerScore = 0;
 let playerScoreDisplay = document.getElementById('playerScore')
 let computerScoreDisplay = document.getElementById('computerScore')
 
+/**
+ * Notifies the user of sound effects with an alert
+ */
+
 window.onload = function() {
     alert("This game has sound effects!");
 }
 
-function outcome() {
-    let old_elem = document.getElementById("ready");
-    let new_elem = document.getElementById("result");
-    old_elem.replaceWith(new_elem);
+/**
+ * Displays winner/loser or when round is finished
+ */
+
+
+ function outcome() {
+    document.getElementById('ready').innerText = result;   
  }
+
+  /** 
+  * Listens for a click event on buttons
+  * and executes required functions
+ */
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     playerChoice = e.target.id;
@@ -30,6 +46,10 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     getResult();
     outcome();
 }))
+
+/**
+ * Generates a random number (1-3) and assigns it to a choice
+ */
 
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3 + 1);
@@ -45,6 +65,11 @@ function generateComputerChoice() {
     }
     computerChoiceDisplay.innerHTML = computerChoice;
 }
+
+/**
+ * Uses logical operators to declare outcome and
+ * changes image source accordingly
+ */
 
 function getResult() {
     if (computerChoice === playerChoice) {
@@ -99,8 +124,12 @@ function getResult() {
         ninja.play();
     }
 
-    resultDisplay.innerHTML = result;
+
 }
+
+/**
+ * Iterates player score and calls the finishRound function
+ */
 
 function incrementScore() {  
     var oldScore = parseInt(document.getElementById('playerScore').innerText);
@@ -109,12 +138,20 @@ function incrementScore() {
     finishRound();
 }
 
+/**
+ * Iterates computer score and calls the finishRound function
+ */
+
 function incrementLose() {
     var oldScore = parseInt(document.getElementById('computerScore').innerText);
     document.getElementById('computerScore').innerText = ++oldScore;
     computerScore++;
     finishRound();
 }
+
+/**
+ * Resets the game when a score reaches 5
+ */
 
 function finishRound() {
     if(yourScore == 5) {
@@ -125,7 +162,7 @@ function finishRound() {
         document.getElementById('computerScore').innerText = 0;
         yourScore = 0;
         computerScore = 0;
-     }
+    }
     if(computerScore == 5) {
         result = "You lose this round!!!"
         oldScore = parseInt(document.getElementById('playerScore').innerText);
@@ -135,5 +172,4 @@ function finishRound() {
         yourScore = 0;
         computerScore = 0;
     }
-  
 }
