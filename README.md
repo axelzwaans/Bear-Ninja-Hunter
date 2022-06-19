@@ -1,20 +1,20 @@
 # Bear.Ninja.Hunter
 
-Bear.Ninja.Hunter is a web browser based rock, paper, scissors type game. In this case I'm using bear, ninja, hunter (bear eats ninja, ninkja kills hunter, hunter shoots bear). The player plays a game of chance against the computer, and if the player beats the computer to 5 wins, they will get an alert with a fun fact about bears (or ninjas, or hunters!).  
+Bear.Ninja.Hunter is a web browser based rock, paper, scissors type retro arcade game. In this case I'm using bear, ninja, hunter (bear eats ninja, ninja kills hunter, hunter shoots bear). The player wins the round if they reach 5 points before the computer does. 
 
 # UX
 
-The website draws the player direcly into the game. 
+Everything in this game is designed to give the player a relaxing gaming experience while enjoying retro graphics.
 
 # UI
 
-While the game required minimal interface between the user and the computer, simple pseudo styles are added to the selectors to give the player a deeper sense of engagement with the game. Sound effects are played when the player has won a round, and a fun fact is displayed if the player beats the computor to 5 wins.
+While the game required minimal interface between the user and the computer, simple pseudo styles are added to the selectors to give the player a deeper sense of engagement with the game. Sound effects are used when the player has won a round.
 
 # Design
 
 **Imagery**
 
-The images for bear, hunter and ninja were downloaded from [pinterest.com](www.pinterest.com). Whenever a character loses a round, their image will be replaced with a 'sad' image. 
+WHen hovered over, the images are enlarged. Whenever a character loses a turn, their image will be replaced with a corresponding 'sad' image.
 
 **Fonts**
 
@@ -22,13 +22,13 @@ I'm using the font [Press Start P2](https://fonts.google.com/specimen/Press+Star
 
 **Colours**
 
-I want this game to look retro, stylish and vibrant so I'm using the following colours.
+To achieve a retro, stylish and vibrant look, I'm using the following colours.
 
 - #A8D0E6 is used for the background.
 - #F76C6C is used for the footer.
 - #F8E9A1 is used for the game outcome text.
 
-The rest of the text is plain black to keep the retro look.
+The rest of the text is plain black.
 
 # Features
 
@@ -36,7 +36,68 @@ The rest of the text is plain black to keep the retro look.
 
     - The game has a simple header with the title of the game. The subheading reminds the player that they're supposed to make a choice to play. 
 
+![header](assets/images-readme/header.png)
+
 * **Game Area**
 
-    - The game area consists of the selection area, 
+    - The game area consists of the selection area, where the images represent the choices the player can make. Underneath that, the outcomes and scores are displayed.
+
+![game area](assets/images-readme/game-area.png) 
+
+* **Footer**
+
+    -  There is a simple footer with the rules of the game.
+
+![footer](assets/images-readme/footer.png)
+
+# Game functionality
+
+This game is created with JavaScript. The player is able to play against the computer using a combination of functions. The computer randomly generates a number between 1-3 whenever the player clicks on their choice. This number is assigned a choice, and a winner is declared for each point. When the player or the computer reaches 5 points, the round winner is declared, and the points reset. For interactivity, sound effects are added when a player wins a point, and the images are enlarged when hovered over. 
+
+# Deployment
+
+This website has been deployed to GitHub using the following steps:
+
+1. Within the Github repository, navigate to the settings tab.
+2. From the source section drop-down menu, select the main branch.
+3. Press save to receive a link to the completed website - [Live on Mars](https://axelzwaans.github.io/live-on-mars/)
+
+# Testing
+
+This website has been successfully tested using Chrome, Firefox and Safari. 
+
+I have also tested the website on various screen sizes for responsiveness, including tablets and phones, to ensure that the media queries achieve the desired result. 
+
+**Validator Testing**
+
+ - HTML
+     - I used [The W3C Markup Validation Service](https://validator.w3.org/) to validate the html. No errors were found.
+
+   - CSS
+     - I used [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate the CSS. No errors were found.
+
+   - Responsiveness
+     - I used [Am I Responsive](http://ami.responsivedesign.is/) to validate responsive on different devices.
+
+   - DevTools
+     - I used [Chrome Devtools](https://developer.chrome.com/docs/devtools/) for general code and responsiveness testing.
+
+   - Lighthouse
+     - I used Lighthouse to check performance & accessibility. Results are displayed below.
+
+**Bugs**
+
+There are no bugs present in the current version of the project.
+
+# Credits
+
+**Content**
+  
+  - For coding related questions I used [Stackoverflow](https://stackoverflow.com/) and [w3schools](https://www.w3schools.com/).
+  - The font is taken from [Google Fonts](https://fonts.google.com/).
+
+**Media**
+
+  - The images for bear, hunter and ninja were downloaded from [pinterest.com](www.pinterest.com). 
+
 

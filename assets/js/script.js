@@ -4,7 +4,6 @@
 
 const computerChoiceDisplay = document.getElementById('computer-choice');
 const playerChoiceDisplay = document.getElementById('player-choice');
-const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
 let bear = new Audio("assets/audio/bear.mp3");
 let ninja = new Audio("assets/audio/ninja.mp3");
@@ -138,7 +137,7 @@ function incrementScore() {
  */
 
 function incrementLose() {
-    var oldScore = parseInt(document.getElementById('computerScore').innerText);
+    let oldScore = parseInt(document.getElementById('computerScore').innerText);
     document.getElementById('computerScore').innerText = ++oldScore;
     computerScore++;
     finishRound();
@@ -150,7 +149,7 @@ function incrementLose() {
 
 function finishRound() {
     if(yourScore == 5) {
-        result = "You win this round!!!"
+        result = "You win this round!!!";
         oldScore = parseInt(document.getElementById('playerScore').innerText);
         document.getElementById('playerScore').innerText = 0;
         oldScore = parseInt(document.getElementById('computerScore').innerText);
@@ -159,7 +158,7 @@ function finishRound() {
         computerScore = 0;
     }
     if(computerScore == 5) {
-        result = "You lose this round!!!"
+        result = "You lose this round!!!";
         oldScore = parseInt(document.getElementById('playerScore').innerText);
         document.getElementById('playerScore').innerText = 0;
         oldScore = parseInt(document.getElementById('computerScore').innerText);
