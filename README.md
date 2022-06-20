@@ -2,6 +2,8 @@
 
 Bear.Ninja.Hunter is a web browser based rock, paper, scissors type game. In this case bear eats ninja, ninja kills hunter and hunter shoots bear. It's a simple retro styled arcade game designed to give the user a relaxing gaming experience while enjoying nostalgic graphics and soothing colours. When the player or the computer wins 5 points, the winner is declared and the scores are reset. Whether you're a kid playing at home on an iPad, or an office worker looking for a quick distraction at work, this game has got you covered!
 
+![responsive-design](assets/images-readme/responsive-design.png)
+
 # UX
 
 Everything in this game is designed to give the player a relaxing gaming experience while enjoying retro graphics.
@@ -64,7 +66,13 @@ This website has been deployed to GitHub using the following steps:
 
 # Testing
 
-This website has been successfully tested using Chrome, Firefox and Safari. 
+I have tested the game functionality and the following functions are being executed without error;
+
+  - When hovered over, the selector images enlarge.
+  - When a selector image is clicked, the computer generates a random choice and compares the value to the player's value.
+  - The announcement text declares winner/loser.
+  - Scores are tracked and displayed.
+  - After 5 points, the game resets.
 
 I have also tested the website on various screen sizes for responsiveness, including tablets and phones, to ensure that the media queries achieve the desired result. 
 
@@ -85,19 +93,22 @@ I have also tested the website on various screen sizes for responsiveness, inclu
    - Lighthouse
      - I used Lighthouse to check performance & accessibility. Results are displayed below.
 
+![Lighthouse](assets/images-readme/lighthouse.png)
+
 **Bugs**
 
-There are no bugs present in the current version of the project.
+There are no bugs present in the current version of the project. 
 
 # Credits
 
 **Content**
-  
+
+  - For coding guidance to set up the game I used [this youtube tutorial](https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=568s).
   - For coding related questions I used [Stackoverflow](https://stackoverflow.com/) and [w3schools](https://www.w3schools.com/).
   - The font is taken from [Google Fonts](https://fonts.google.com/).
 
 **Media**
 
-  - The images for bear, hunter and ninja were downloaded from [pinterest.com](www.pinterest.com). 
+  - All images were downloaded from [pinterest.com](www.pinterest.com). 
 
 
