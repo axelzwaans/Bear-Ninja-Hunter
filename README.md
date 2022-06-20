@@ -1,6 +1,6 @@
 # Bear.Ninja.Hunter
 
-Bear.Ninja.Hunter is a web browser based rock, paper, scissors type retro arcade game. In this case I'm using bear, ninja, hunter (bear eats ninja, ninja kills hunter, hunter shoots bear). The player wins the round if they reach 5 points before the computer does. 
+Bear.Ninja.Hunter is a web browser based rock, paper, scissors type game. In this case bear eats ninja, ninja kills hunter and hunter shoots bear. It's a simple retro styled arcade game designed to give the user a relaxing gaming experience while enjoying nostalgic graphics and soothing colours. When the player or the computer wins 5 points, the winner is declared and the scores are reset. Whether you're a kid playing at home on an iPad, or an office worker looking for a quick distraction at work, this game has got you covered!
 
 # UX
 
@@ -14,7 +14,7 @@ While the game required minimal interface between the user and the computer, sim
 
 **Imagery**
 
-WHen hovered over, the images are enlarged. Whenever a character loses a turn, their image will be replaced with a corresponding 'sad' image.
+When hovered over, the images are enlarged. Whenever a character loses a turn, their image will be replaced with a corresponding 'sad' image.
 
 **Fonts**
 
@@ -34,13 +34,13 @@ The rest of the text is plain black.
 
 * **Header**
 
-    - The game has a simple header with the title of the game. The subheading reminds the player that they're supposed to make a choice to play. 
+    - The game has a simple header with the title of the game and a subheading that reminds the player that they have to make a choice to start the game.
 
 ![header](assets/images-readme/header.png)
 
 * **Game Area**
 
-    - The game area consists of the selection area, where the images represent the choices the player can make. Underneath that, the outcomes and scores are displayed.
+    - The game area consists of the selection area, where the images represent the choices the player can make. Underneath that, the outcomes and scores are displayed, along with some text declaring the winner/loser.
 
 ![game area](assets/images-readme/game-area.png) 
 
@@ -52,7 +52,7 @@ The rest of the text is plain black.
 
 # Game functionality
 
-This game is created with JavaScript. The player is able to play against the computer using a combination of functions. The computer randomly generates a number between 1-3 whenever the player clicks on their choice. This number is assigned a choice, and a winner is declared for each point. When the player or the computer reaches 5 points, the round winner is declared, and the points reset. For interactivity, sound effects are added when a player wins a point, and the images are enlarged when hovered over. 
+This game is created using JavaScript. The player is able to play against the computer using a combination of functions. The computer randomly generates a number between 1-3 whenever the player clicks on their choice. This number is assigned a choice, and a winner is declared for each point. When the player or the computer reaches 5 points, the round winner is declared, and the points reset. For interactivity, sound effects are added when a player wins a point, and the images are enlarged when hovered over. 
 
 # Deployment
 
@@ -60,7 +60,7 @@ This website has been deployed to GitHub using the following steps:
 
 1. Within the Github repository, navigate to the settings tab.
 2. From the source section drop-down menu, select the main branch.
-3. Press save to receive a link to the completed website - [Live on Mars](https://axelzwaans.github.io/live-on-mars/)
+3. Press save to receive a link to the completed website - [bear.ninja.hunter](https://axelzwaans.github.io/bear.ninja.hunter/)
 
 # Testing
 

@@ -113,11 +113,35 @@ footer div {
 @media screen and (max-width: 950px) {
 
     .heading {
-    font-size: 30px;
-    margin: 20px auto;
+        font-size: 30px;
+        margin: 20px auto;
+    }
+    
+    button {
+        margin: 10px;
     }
 
-    #rules > p {
-    font-size: 12px;
+    .subheading {
+        margin: 20px auto;
+    }
+
+    footer {
+        flex-shrink: 0;
+        height: 120px;
+        background-color: #F76C6C;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .selection-area img {
+        height: 150px;
+        width: 150px;
+    }
+
+    button {
+        height: 150px;
+        width: 150px;
+        margin: 20px;
     }
 }
