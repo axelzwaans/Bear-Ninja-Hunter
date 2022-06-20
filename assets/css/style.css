@@ -24,7 +24,7 @@ body {
 }
 
 .subheading {
-    margin: 60px auto;
+    margin: 40px auto;
 }
 
 /* Game area */
@@ -55,7 +55,7 @@ button {
 }
 
 .choices {
-    margin: 40px auto;
+    margin-bottom: 40px;
 }
 
 .choices > p {
