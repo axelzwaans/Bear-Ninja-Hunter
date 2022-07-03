@@ -1,6 +1,6 @@
-# Bear.Ninja.Hunter
+# Bear, Ninja, Hunter
 
-Bear.Ninja.Hunter is a web browser based rock, paper, scissors type game. In this case bear eats ninja, ninja kills hunter and hunter shoots bear. It's a simple retro styled arcade game designed to give the user a relaxing gaming experience while enjoying nostalgic graphics and soothing colours. 
+Bear, Ninja, Hunter is a web browser based rock, paper, scissors type game. In this case bear eats ninja, ninja kills hunter and hunter shoots bear. It's a simple retro styled arcade game designed to give the user a relaxing gaming experience while enjoying nostalgic graphics and soothing colours. 
 
 When the player or the computer wins 5 points, the winner is declared and the scores are reset. Whether you're a kid playing at home on an iPad, or an office worker looking for a quick distraction at work, this game has got you covered!
 
