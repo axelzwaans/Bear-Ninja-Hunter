@@ -1,22 +1,24 @@
 # Bear.Ninja.Hunter
 
-Bear.Ninja.Hunter is a web browser based rock, paper, scissors type game. In this case bear eats ninja, ninja kills hunter and hunter shoots bear. It's a simple retro styled arcade game designed to give the user a relaxing gaming experience while enjoying nostalgic graphics and soothing colours. When the player or the computer wins 5 points, the winner is declared and the scores are reset. Whether you're a kid playing at home on an iPad, or an office worker looking for a quick distraction at work, this game has got you covered!
+Bear.Ninja.Hunter is a web browser based rock, paper, scissors type game. In this case bear eats ninja, ninja kills hunter and hunter shoots bear. It's a simple retro styled arcade game designed to give the user a relaxing gaming experience while enjoying nostalgic graphics and soothing colours. 
+
+When the player or the computer wins 5 points, the winner is declared and the scores are reset. Whether you're a kid playing at home on an iPad, or an office worker looking for a quick distraction at work, this game has got you covered!
 
 ![responsive-design](assets/images-readme/responsive-design.png)
 
 # UX
 
-Everything in this game is designed to give the player a relaxing gaming experience while enjoying retro graphics.
+This game is designed to give the player a relaxing gaming experience while enjoying retro graphics. Simple pseudo styles are added to the selectors to give the player a deeper sense of engagement with the game. Sound effects are used when the player has won a turn.
 
 # UI
 
-While the game required minimal interface between the user and the computer, simple pseudo styles are added to the selectors to give the player a deeper sense of engagement with the game. Sound effects are used when the player has won a round.
+The player interacts with the computer with a left mouse click.
 
 # Design
 
 **Imagery**
 
-When hovered over, the images are enlarged. Whenever a character loses a turn, their image will be replaced with a corresponding 'sad' image.
+Each choice is represented with an image. When hovered over, the images are enlarged. Whenever a character loses a turn, their image will be replaced with a corresponding 'sad' image.
 
 **Fonts**
 
@@ -54,7 +56,7 @@ The rest of the text is plain black.
 
 # Game functionality
 
-This game is created using JavaScript. The player is able to play against the computer using a combination of functions. The computer randomly generates a number between 1-3 whenever the player clicks on their choice. This number is assigned a choice, and a winner is declared for each point. When the player or the computer reaches 5 points, the round winner is declared, and the points reset. For interactivity, sound effects are added when a player wins a point, and the images are enlarged when hovered over. 
+This game is created using JavaScript. The computer randomly generates a number between 1-3 whenever the player clicks on their choice. This number is assigned a choice, and a winner is declared for each point. When the player or the computer reaches 5 points, the round winner is declared, and the points reset.
 
 # Deployment
 

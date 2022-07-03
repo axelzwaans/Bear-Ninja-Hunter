@@ -2,9 +2,9 @@
  * Declare variables to be accessed in global scope
  */
 
-const computerChoiceDisplay = document.getElementById('computer-choice');
-const playerChoiceDisplay = document.getElementById('player-choice');
-const possibleChoices = document.querySelectorAll('button');
+let computerChoiceDisplay = document.getElementById('computer-choice');
+let playerChoiceDisplay = document.getElementById('player-choice');
+let possibleChoices = document.querySelectorAll('button');
 let bear = new Audio("assets/audio/bear.mp3");
 let ninja = new Audio("assets/audio/ninja.mp3");
 let hunter = new Audio("assets/audio/hunter.mp3");
@@ -13,6 +13,7 @@ let computerChoice;
 let result;
 let yourScore = 0;
 let computerScore = 0;
+let oldScore;
 
 /**
  * Notifies the user of sound effects with an alert
@@ -126,7 +127,7 @@ function getResult() {
  */
 
 function incrementScore() {  
-    var oldScore = parseInt(document.getElementById('playerScore').innerText);
+    oldScore = parseInt(document.getElementById('playerScore').innerText);
     document.getElementById('playerScore').innerText = ++oldScore;
     yourScore++;
     finishRound();
@@ -137,7 +138,7 @@ function incrementScore() {
  */
 
 function incrementLose() {
-    let oldScore = parseInt(document.getElementById('computerScore').innerText);
+    oldScore = parseInt(document.getElementById('computerScore').innerText);
     document.getElementById('computerScore').innerText = ++oldScore;
     computerScore++;
     finishRound();
